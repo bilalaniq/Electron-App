@@ -84,3 +84,8 @@ Here’s an overview of the key files and directories in the project:
 ## Contributing 🤝
 
 If you'd like to contribute to this project, feel free to fork the repository and create a pull request with your changes. Please follow best practices and maintain a clean code structure. 🙌
+
+
+
+## project requirements
+[Download the Word document](Project_Report.docx)
