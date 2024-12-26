@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="full_team_detail.css" />
+    <title>Dynamic Team</title>
+  </head>
+
+  <body>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #2c2c2c;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #00bfff; /* Light Sky Blue */
+        border-radius: 10px;
+        border: 3px solid #121212;
+        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+      }
+
+      /* Hover state for glowing effect */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #00bfff;
+        box-shadow: 0 0 10px 4px #00bfff, 0 0 20px 6px rgba(0, 191, 255, 0.8),
+          0 0 30px 8px rgba(0, 191, 255, 0.6);
+        transform: scale(
+          1.1
+        ); /* Optional: add a slight scale effect for extra emphasis */
+      }
+
+      #backButton {
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #3498db; /* Blue color */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease; /* Smooth transition on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        display: block; /* Ensure it takes up its own line */
+        margin-left: auto;
+        margin-right: auto; /* Center-align the button */
+      }
+
+      /* Hover effect */
+      #backButton:hover {
+        background-color: #2980b9; /* Darker blue when hovered */
+        transform: translateY(-2px); /* Slightly lift the button */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+      }
+
+      /* Focus effect for accessibility */
+      #backButton:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Add custom outline when focused */
+      }
+    </style>
+
+    <!-- Back Button -->
+
+    <!-- Container for dynamically added team items -->
+    <div class="team-container" id="teamContainer"></div>
+
+    <script src="full_team_detail.js"></script>
+
+
+    
+
+    <button id="backButton" onclick="goBack()">Back</button>
+
+    <script>
+      // Function to navigate back to the previous page
+      function goBack() {
+        window.history.back(); // Takes the user to the previous page in the browser's history
+      }
+    </script>
+  </body>
+</html>

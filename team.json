@@ -1,0 +1,356 @@
+{
+    "teams": [
+        {
+            "team_name": "Tech Titans",
+            "team_rank": 1,
+            "members": [
+                {
+                    "name": "Alice Johnson",
+                    "role": 0
+                },
+                {
+                    "name": "Bob Smith",
+                    "role": 1
+                },
+                {
+                    "name": "Charlie Brown",
+                    "role": 2
+                },
+                {
+                    "name": "Diana Prince",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Code Warriors",
+            "team_rank": 2,
+            "members": [
+                {
+                    "name": "Eve Larson",
+                    "role": 0
+                },
+                {
+                    "name": "Frank Green",
+                    "role": 1
+                },
+                {
+                    "name": "Grace Hall",
+                    "role": 2
+                },
+                {
+                    "name": "Henry King",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Debuggers United",
+            "team_rank": 3,
+            "members": [
+                {
+                    "name": "Ivy Moore",
+                    "role": 0
+                },
+                {
+                    "name": "Jack White",
+                    "role": 1
+                },
+                {
+                    "name": "Kara Black",
+                    "role": 2
+                },
+                {
+                    "name": "Liam Young",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Cyber Pioneers",
+            "team_rank": 4,
+            "members": [
+                {
+                    "name": "Mia Brown",
+                    "role": 0
+                },
+                {
+                    "name": "Noah Wilson",
+                    "role": 1
+                },
+                {
+                    "name": "Olivia Clark",
+                    "role": 2
+                },
+                {
+                    "name": "Paul Adams",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Alpha Coders",
+            "team_rank": 5,
+            "members": [
+                {
+                    "name": "Quinn Lee",
+                    "role": 0
+                },
+                {
+                    "name": "Ryan Scott",
+                    "role": 1
+                },
+                {
+                    "name": "Sophia Hill",
+                    "role": 2
+                },
+                {
+                    "name": "Tom Gray",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Binary Bandits",
+            "team_rank": 6,
+            "members": [
+                {
+                    "name": "Uma Baker",
+                    "role": 0
+                },
+                {
+                    "name": "Victor Wright",
+                    "role": 1
+                },
+                {
+                    "name": "Wendy Hall",
+                    "role": 2
+                },
+                {
+                    "name": "Xander Price",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Syntax Squad",
+            "team_rank": 7,
+            "members": [
+                {
+                    "name": "Yara Allen",
+                    "role": 0
+                },
+                {
+                    "name": "Zane Harris",
+                    "role": 1
+                },
+                {
+                    "name": "Abby Thomas",
+                    "role": 2
+                },
+                {
+                    "name": "Brian Walker",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Logic Masters",
+            "team_rank": 8,
+            "members": [
+                {
+                    "name": "Cathy Turner",
+                    "role": 0
+                },
+                {
+                    "name": "David Stewart",
+                    "role": 1
+                },
+                {
+                    "name": "Ella Sanchez",
+                    "role": 2
+                },
+                {
+                    "name": "Fred Cooper",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Data Wizards",
+            "team_rank": 9,
+            "members": [
+                {
+                    "name": "Gina Morgan",
+                    "role": 0
+                },
+                {
+                    "name": "Hank Reed",
+                    "role": 1
+                },
+                {
+                    "name": "Iris Powell",
+                    "role": 2
+                },
+                {
+                    "name": "Jason Brooks",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Neural Knights",
+            "team_rank": 10,
+            "members": [
+                {
+                    "name": "Karen Foster",
+                    "role": 0
+                },
+                {
+                    "name": "Leo Watson",
+                    "role": 1
+                },
+                {
+                    "name": "Maggie Perez",
+                    "role": 2
+                },
+                {
+                    "name": "Nate Hughes",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Quantum Coders",
+            "team_rank": 11,
+            "members": [
+                {
+                    "name": "Olive James",
+                    "role": 0
+                },
+                {
+                    "name": "Pete Hayes",
+                    "role": 1
+                },
+                {
+                    "name": "Quincy Diaz",
+                    "role": 2
+                },
+                {
+                    "name": "Rita Ward",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Innovators Guild",
+            "team_rank": 12,
+            "members": [
+                {
+                    "name": "Sam Howard",
+                    "role": 0
+                },
+                {
+                    "name": "Tina Baker",
+                    "role": 1
+                },
+                {
+                    "name": "Uma Fisher",
+                    "role": 2
+                },
+                {
+                    "name": "Victor Nelson",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "AI Avengers",
+            "team_rank": 13,
+            "members": [
+                {
+                    "name": "Wesley Harper",
+                    "role": 0
+                },
+                {
+                    "name": "Xenia Lee",
+                    "role": 1
+                },
+                {
+                    "name": "Yasmine Carter",
+                    "role": 2
+                },
+                {
+                    "name": "Zach Ford",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Cloud Commanders",
+            "team_rank": 14,
+            "members": [
+                {
+                    "name": "Andy Bell",
+                    "role": 0
+                },
+                {
+                    "name": "Bella Hart",
+                    "role": 1
+                },
+                {
+                    "name": "Cody Simmons",
+                    "role": 2
+                },
+                {
+                    "name": "Daisy Evans",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Dev Dynamos",
+            "team_rank": 15,
+            "members": [
+                {
+                    "name": "Ethan Ward",
+                    "role": 0
+                },
+                {
+                    "name": "Fiona Parker",
+                    "role": 1
+                },
+                {
+                    "name": "Gabe Lopez",
+                    "role": 2
+                },
+                {
+                    "name": "Holly Cox",
+                    "role": 3
+                }
+            ]
+        },
+        {
+            "team_name": "Pixel Pioneers",
+            "team_rank": 16,
+            "members": [
+                {
+                    "name": "Ivy James",
+                    "role": 0
+                },
+                {
+                    "name": "Jake Turner",
+                    "role": 1
+                },
+                {
+                    "name": "Kelly Martinez",
+                    "role": 2
+                },
+                {
+                    "name": "Luna Rivera",
+                    "role": 3
+                }
+            ]
+        }
+    ]
+}

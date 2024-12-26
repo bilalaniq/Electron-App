@@ -1,0 +1,67 @@
+{
+  "name": "cyberchronos",
+  "version": "1.0.0",
+  "description": "Your Electron app with node-gyp bindings",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder",
+    "rebuild": "electron-rebuild",
+    "install-deps": "yarn install --build-from-source",
+    "postinstall": "electron-builder install-app-deps",
+    "prepare": "yarn run rebuild",
+    "install-node-gyp": "yarn global add node-gyp"
+  },
+  "dependencies": {
+    "nan": "^2.22.0"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-rebuild": "^3.2.5",
+    "node-addon-api": "^5.1.0",
+    "node-gyp": "^10.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "optionalDependencies": {},
+  "config": {
+    "electron": {
+      "version": "22.0.0"
+    }
+  },
+  "build": {
+    "appId": "com.cyberchronos.app",
+    "productName": "CyberChronos",
+    "win": {
+      "target": "dir",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": "dir",
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "target": "dir",
+      "icon": "build/icon.png"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+     
+    ],
+    "extraResources": [
+      {
+        "from": "./addon/",
+        "to": "addon/"  
+      }
+    ],
+    "asar": true
+  }
+}

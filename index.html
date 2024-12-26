@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTF Schedule</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Font: Orbitron -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-cover bg-center bg-fixed" style="background-color: black">
+    <!-- Vertical CTF Text (Fixed Position) -->
+    <div class="vertical-ctf">
+      <span class="ctf-text">CTF</span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="flex min-h-screen items-center justify-center bg-black">
+      <div class="w-full max-w-4xl bg-gray-800 p-8 rounded-xl shadow-2xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+          <h1 class="text-5xl text-green-400 font-extrabold font-orbitron">
+            CTF Schedule
+          </h1>
+          <!-- Changed to Orbitron font -->
+        </header>
+
+        <div class="flex space-x-6">
+          <!-- Main Content -->
+          <main class="w-3/4">
+            <section class="schedule mb-10">
+              <ul class="event-list space-y-6">
+                <!-- Event Item 1 -->
+                <li
+                  class="event flex justify-between items-center p-4 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600"
+                >
+                  <div>
+                    <span class="event-name text-white font-semibold"
+                      >Add Teams 🚀</span
+                    >
+                  </div>
+                  <button
+                    id="add_team_btn"
+                    class="join-btn bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300"
+                  >
+                    Add
+                  </button>
+                </li>
+                <!-- Event Item 2 -->
+                <li
+                  class="event flex justify-between items-center p-4 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600"
+                >
+                  <div>
+                    <span class="event-name text-white font-semibold"
+                      >Team Details 📝</span
+                    >
+                  </div>
+                  <button
+                    id="full_team_detail"
+                    class="join-btn bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+                  >
+                    See
+                  </button>
+                </li>
+                <!-- Event Item 3 -->
+                <li
+                  class="event flex justify-between items-center p-4 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600"
+                >
+                  <div>
+                    <span class="event-name text-white font-semibold"
+                      >Rounds 🔄</span
+                    >
+                  </div>
+                  <button
+                    id="round_btn"
+                    class="join-btn bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+                  >
+                    See
+                  </button>
+                </li>
+                <!-- Event Item 4 -->
+                <li
+                  class="event flex justify-between items-center p-4 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600"
+                >
+                  <div>
+                    <span class="event-name text-white font-semibold"
+                      >About 🎉</span
+                    >
+                  </div>
+                  <button
+                    class="join-btn bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-300"
+                    id="about_btn"
+                  >
+                    See
+                  </button>
+                </li>
+              </ul>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to the external JS file -->
+    <script src="index_scripts.js"></script>
+  </body>
+</html>

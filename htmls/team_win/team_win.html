@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Team</title>
+  <style>
+    /* General body and layout styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      background-color: rgb(22, 20, 24);
+      color: #eee;
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .team {
+      background-color: #282c34;
+      border-radius: 0.7rem;
+      padding: 1rem;
+      box-shadow: 0 7px 20px 5px #00000088;
+      transition: 0.3s;
+    }
+
+    .team img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .team h2 {
+      margin: 1rem 0;
+      color: #fff;
+    }
+
+    .team .description {
+      color: #a89ec9;
+      margin-bottom: 1rem;
+    }
+
+    .tokenInfo {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      color: #ee83e5;
+      font-weight: bold;
+    }
+
+    .duration {
+      color: #a89ec9;
+    }
+
+    .team:hover {
+      box-shadow: 0 7px 50px 10px #000000aa;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Container for dynamically added team items -->
+  <div class="team-container" id="teamContainer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/electron/19.0.0/electron.min.js"></script>
+  <!-- Electron script -->
+
+  <script>
+    const { ipcRenderer } = require('electron');  // Use ipcRenderer in the renderer process
+
+    // Function to create a team box
+    function createTeamBox(team_name, team_rank) {
+      const teamBox = document.createElement('div');
+      teamBox.classList.add('team');
+      const img = 'https://via.placeholder.com/300';
+
+      teamBox.innerHTML = `
+      <img src="${img}" alt="${team_name}">
+      <h2>${team_name}</h2>
+      <p class="description">Rank: ${team_rank}</p>
+      <div class="tokenInfo">
+          <div class="price"></div>
+      </div>
+  `;
+      return teamBox;
+    }
+
+    // Function to render teams after loading the data
+    globalThis.renderTeams = function () {
+      const teamContainer = document.getElementById('teamContainer');
+
+
+      // Clear any existing teams
+      teamContainer.innerHTML = '';
+
+      for (let i = 0; i < globalThis.CTF.teams_name.length; i++) {
+        alert(globalThis.CTF.team_name[i]);
+        
+      }
+    };
+
+  </script>
+</body>
+
+<!-- const teamBox = createTeamBox(globalThis.CTF.teams_name[i], globalThis.CTF.teams_rank[i]);
+        teamContainer.appendChild(teamBox); -->
+</html>

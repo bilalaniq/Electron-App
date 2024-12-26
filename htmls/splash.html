@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <style>
+    /* Body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Main container */
+    .splash-container {
+      text-align: center;
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Logo styling */
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 30px;
+      animation: bounce 2s infinite; /* Logo bounce animation */
+    }
+
+    /* Loading text */
+    .loading-text {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out 1.5s forwards; /* Fade-in animation */
+    }
+
+    /* Circular loading spinner */
+    .spinner {
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-top: 6px solid white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1.5s linear infinite;
+      margin: 20px auto;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Splash container -->
+  <div class="splash-container">
+    <!-- Logo (Replace with your actual logo image) -->
+    <!-- <img class="logo" src="../img/1-logo.png" alt="App Logo">  -->
+
+    <!-- Loading text -->
+    <div class="loading-text">Please wait, loading...</div>
+
+    <!-- Circular loading spinner -->
+    <div class="spinner"></div>
+  </div>
+
+</body>
+</html>

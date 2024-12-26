@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tournament Bracket</title>
+    <link rel="stylesheet" href="rounds.css" />
+    <style>
+      /* Back Button Styles */
+      .back-button-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+      }
+
+      .back-button {
+        padding: 12px 24px;
+        font-size: 18px;
+        background: linear-gradient(45deg, #ff6f61, #ff3b3f);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        font-weight: bold;
+      }
+
+      .back-button:hover {
+        background: linear-gradient(45deg, #ff3b3f, #ff6f61);
+        transform: translateY(-3px);
+        /* Slight lift effect */
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .back-button:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tournament-container">
+      <!-- Title -->
+      <div class="title-container">
+        <h1 class="aurora-heading">Tournament Bracket</h1>
+      </div>
+
+      <div class="pools-container">
+        <!-- Pool A -->
+        <div class="pool pool-a">
+          <h2>Pool A</h2>
+          <div class="pool-matches">
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pool B -->
+        <div class="pool pool-b">
+          <h2>Pool B</h2>
+          <div class="pool-matches">
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Knockout Round -->
+      <div class="knockout-stage">
+        <h2>Knockout Stage</h2>
+        <div class="round round1">
+          <div class="matchup">
+            <div class="team">Unknown</div>
+            <span class="vs">⚔️</span>
+            <div class="team">Unknown</div>
+          </div>
+          <div class="matchup">
+            <div class="team">Unknown</div>
+            <span class="vs">⚔️</span>
+            <div class="team">Unknown</div>
+          </div>
+          <div class="matchup">
+            <div class="team">Unknown</div>
+            <span class="vs">⚔️</span>
+            <div class="team">Unknown</div>
+          </div>
+          <div class="matchup">
+            <div class="team">Unknown</div>
+            <span class="vs">⚔️</span>
+            <div class="team">Unknown</div>
+          </div>
+        </div>
+
+        <div class="semi-final">
+          <h2>Semi Final</h2>
+          <div class="round round2">
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+            <div class="matchup">
+              <div class="team">Unknown</div>
+              <span class="vs">⚔️</span>
+              <div class="team">Unknown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final -->
+      <div class="round final">
+        <h2>Final</h2>
+        <div class="matchup">
+          <div class="team">Unknown</div>
+          <span class="vs">⚔️</span>
+          <div class="team">Unknown</div>
+        </div>
+      </div>
+
+      <!-- Display the Winner -->
+      <div class="round Winner">
+        <h2>Winner</h2>
+        <div class="matchup">
+          <div class="team">Unknown</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button at the bottom right -->
+    <div class="back-button-container">
+      <button id="back_btn" class="back-button">Back</button>
+    </div>
+  </body>
+  <script src="rounds.js"></script>
+</html>

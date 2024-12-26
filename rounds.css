@@ -1,0 +1,267 @@
+/* Disable text selection using the mouse */
+* {
+    user-select: none;
+    /* For most browsers */
+    -webkit-user-select: none;
+    /* For Safari */
+    -moz-user-select: none;
+    /* For Firefox */
+    -ms-user-select: none;
+    /* For Internet Explorer/Edge */
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff4081;
+    /* Vibrant Pinkish Hue */
+    border-radius: 10px;
+    border: 3px solid #121212;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+
+/* Hover state for glowing effect */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff4081;
+    /* Vibrant Pinkish Hue */
+    box-shadow: 0 0 10px 4px #ff4081, 0 0 20px 6px rgba(255, 64, 129, 0.8), 0 0 30px 8px rgba(255, 64, 129, 0.6);
+    transform: scale(1.1);
+    /* Optional: add a slight scale effect for extra emphasis */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Tournament Container */
+.tournament-container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    color: #eee;
+}
+
+/* Title Container */
+.title-container {
+    position: relative;
+}
+
+/* Heading with Aurora Effect */
+.aurora-heading {
+    font-size: 3rem;
+    color: #ff4081;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.aurora-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 64, 129, 0.3);
+    /* Color of the aurora */
+    filter: blur(20px);
+    animation: aurora-move 8s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes aurora-move {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Pools Container */
+.pools-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.pool {
+    width: 45%;
+    background: linear-gradient(145deg, #444, #555);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pool h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ff4081;
+}
+
+.pool-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.matchup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.team {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.team:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* Knockout Stage */
+.knockout-stage {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.round .matchup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+}
+
+.final {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ff4081;
+}
+
+.round .matchup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e040fb;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .pools-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pool {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .knockout-stage {
+        width: 100%;
+    }
+
+    .round .matchup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .team {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+
+
+/* VS Box Styling */
+.vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3498db; /* Soft blue for contrast */
+    padding: 5px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+    z-index: 1; 
+}
