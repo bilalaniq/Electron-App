@@ -88,4 +88,4 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 
 ## project requirements
-[Download the Word document](Project_Report.docx)
+[Download the project requirement document](project_requirement.pdf)
